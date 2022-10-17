@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.input{
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: v.$Light-grayish-blue;
+
+    &__minus:hover{
+        cursor: pointer;
+    }
+
+    &__number{
+        width: 100%;
+        border: none;
+        background-color: v.$Light-grayish-blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: v.$Font;
+        text-align: center;
+        outline: none;
+    }
+
+    &__plus:hover{
+        cursor: pointer;
+    }
+}
