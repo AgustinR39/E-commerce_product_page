@@ -2,12 +2,11 @@
 @use 'mixins';
 
 .modal-gallery{
-    display: none;
     width: 550px;
-
+    
     &__background{
         @include mixins.modal-background;
-        // display: grid;
+        display: none;
         place-content: center;
     }
 
